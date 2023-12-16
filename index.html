@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wujinhao'blog</title>
+</head>
+<style>
+    @import url(./main.css);
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+
+    <div class="mybox">
+
+        <div class="head">
+
+        </div>
+
+        <div class="title">
+            <p><strong>Coconuter</strong></p>
+            <div class="ray"></div>
+        </div>
+
+        <div class="introduction">
+            <p style="color: rgb(0, 128, 255);">来自于山东威海~</p>
+            <p >喜欢计算机技术和二次元&#128516;</p>
+            <p style="color: rgb(255, 34, 0);">喜欢收集各种手办和角色立牌</p>
+            <p style="color: green;">不喜欢体育但不是肥宅</p>
+            <p style="color: pink;">喜欢熬夜乐于助人!</p>
+        </div>
+
+        <a href="https://space.bilibili.com/473304486?spm_id_from=333.1007.0.0" target="_blank" class="bili">Bilibili</a>
+        <a href="#" target="_blank">博客🎨</a>
+    </div>
+
+    <div class="blog1">
+        <div class="nav"><strong>Coconuter - bash</strong></div>
+            <strong>hanoi problem</strong><br>
+            void move( char a,char b)
+            {
+                printf("%c -> %c\n",a,b);
+            } <br>
+            void hanoi(int n,char a,char b,char c) <br>
+            { <br>
+                if(n==1) <br>
+                move(a,c); <br>
+                else <br>
+                { <br>
+                   hanoi(n-1,a,c,b); <br> 
+                   move(a,c); <br>
+                   hanoi(n-1,b,a,c); <br>
+                } <br> 
+            } <br>
+            int main() 
+            { 
+                hanoi(3,'A','B','C'); 
+                return 0;
+            } <br>
+    </div>
+
+    <div class="blog2">
+        <div class="nav"><strong>Coconuter - bash</strong></div>
+        <p>
+            写点啥好呢
+        </p>
+        <p>
+            先空着吧🤣
+        </p>
+    </div>
+
+    <div class="bottom">
+        © 2023 By Coconuter🎉 · E-mail:sdutwujinhao@gmail.com
+    </div>
+</body>
+</html>
