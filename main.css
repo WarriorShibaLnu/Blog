@@ -207,4 +207,5 @@ body{
     /* font-size: large; */
     box-shadow: 1px 1px 8px 5px rgb(214, 214, 214);
     transform: translateY(-3px);
+    text-decoration: none;
 }
