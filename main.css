@@ -23,12 +23,13 @@ body{
     position: absolute;
     left: 100px;
     top: -50px;
-    background-image: url(./doge.jpg);
+    /* background-image: url(./lihua.png); */
     background-size: cover;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     transition: all .3s;
+    pointer-events: none;
 }
 
 .mybox:hover{
@@ -90,7 +91,7 @@ body{
     margin-top: 35%;
     text-decoration: none;
     color: white;
-    transition: all .3s;
+    transition: all .3s linear;
     line-height: 25px;
 }
 
@@ -124,7 +125,7 @@ body{
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.7);
     z-index: 0;
-    transition: all .3s ;
+    transition: all .3s linear;
 }
 
 .nav{
@@ -186,6 +187,17 @@ body{
     left: 70px;
     top: -90px;
     pointer-events: none;
+    animation: lihua 3s linear infinite;
+}
+
+@keyframes lihua {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: 100px 10000px;
+    }
 }
 
 
