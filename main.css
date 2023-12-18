@@ -107,8 +107,8 @@ body{
 }
 
 .blog1{
-    left: 100px;
-    top: 50px;
+    left: 0px;
+    top: 10px;
     width: 600px;
     height: 350px;
     border-radius: 10px;
@@ -118,8 +118,8 @@ body{
 }
 
 .blog2{
-    left: 200px;
-    top: 300px;
+    left: 100px;
+    top: 260px;
     width: 600px;
     height: 350px;
     border-radius: 10px;
@@ -171,14 +171,14 @@ body{
 }
 
 .father{
-    /* float: right; */
-
+    float: right;
+    overflow: hidden;
     position: relative;
     /* background-color: white; */
-    width: 800px;
-    height: 400px;
-    top: -350px;
-    left: 600px;
+    width: 900px;
+    height: 700px;
+    /* top: -400px; */
+    /* left: 600px; */
 }
 
 
