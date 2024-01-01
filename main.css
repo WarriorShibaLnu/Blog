@@ -249,8 +249,23 @@ body{
 
 .lantern{
     display: block;
-    position: absolute;
-    right: -6%;
+    position: fixed;
+    right: -4%;
     top: -10%;
     z-index: 10;
+    animation: shake 4s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(-3deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+
+    100% {
+        transform: rotate(-3deg);
+    }
 }
