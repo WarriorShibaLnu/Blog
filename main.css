@@ -82,7 +82,7 @@ body{
 
 }
 
-.mybox a{
+/*.mybox a{
     display: inline-block;
     width: 45%;
     height: 25px;
@@ -93,9 +93,42 @@ body{
     color: white;
     transition: all .3s linear;
     line-height: 25px;
+}*/
+.bili{
+    display: block;
+    width: 45%;
+    height: 25px;
+    background-color: rgba(97, 95, 95, 0.8);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: all .3s linear;
+    line-height: 25px;
+    position: absolute;
+    left: 3%;
+    bottom: 5%;
 }
 
-.mybox a:hover{
+.bok{
+    display: block;
+    width: 45%;
+    height: 25px;
+    background-color: rgba(97, 95, 95, 0.8);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: all .3s linear;
+    line-height: 25px;
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+}
+
+.bili:hover{
+    font-size: large;
+    transform: translateY(-3.5px);
+}
+.bok:hover{
     font-size: large;
     transform: translateY(-3.5px);
 }
@@ -112,7 +145,7 @@ body{
     width: 600px;
     height: 350px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     z-index: 1;
     transition: all .3s linear;
 }
