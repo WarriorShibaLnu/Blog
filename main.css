@@ -253,6 +253,7 @@ body{
     right: -4%;
     top: -10%;
     z-index: 10;
+    transform-origin: top center;
     animation: shake 4s ease-in-out infinite;
 }
 
