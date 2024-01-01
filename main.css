@@ -127,10 +127,13 @@ body{
 .bili:hover{
     font-size: large;
     transform: translateY(-3.5px);
+    text-decoration: none;
+
 }
 .bok:hover{
     font-size: large;
     transform: translateY(-3.5px);
+    text-decoration: none;
 }
 
 .blog1,
