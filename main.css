@@ -89,12 +89,13 @@ body{
     background-color: rgba(97, 95, 95, 0.8);
     border-radius: 10px;
     text-decoration: none;
-    color: white;
+    color: rgb(238, 236, 236);
     transition: all .6s linear;
     line-height: 25px;
     position: absolute;
     left: 3%;
     bottom: 5%;
+    font-size: 20px;
 }
 
 .bok{
@@ -104,23 +105,24 @@ body{
     background-color: rgba(97, 95, 95, 0.8);
     border-radius: 10px;
     text-decoration: none;
-    color: white;
+    color: rgb(238, 236, 236);
     transition: all .6s linear;
     line-height: 25px;
     position: absolute;
     right: 3%;
     bottom: 5%;
+    font-size: 20px;
 }
 
 .bili:hover{
-    font-size: large;
+    color: white;
     transform: translateY(-3.5px);
     text-decoration: none;
 
 }
 
 .bok:hover{
-    font-size: large;
+    color: white;
     transform: translateY(-3.5px);
     text-decoration: none;
 }
