@@ -276,3 +276,7 @@ body{
 a.column:focus {
     text-decoration: none;
 }
+
+a.aa:focus {
+    text-decoration: none;
+}
