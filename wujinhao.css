@@ -1,0 +1,90 @@
+#bac {
+    margin: 0px;
+    background-image: url(./Hanser.png);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    padding: 0px;
+}
+
+
+
+.xiaohui {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto auto 0;
+    position: absolute;
+    top: 7px;
+}
+
+.k {
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: auto auto auto 60px;
+    margin-bottom: 30px;
+}
+
+.tudu {
+    margin: auto 0px auto auto;
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+
+}
+
+.daohang{
+    background-color: white;
+    height: 54px;
+    border-top: 3px solid rgb(130, 208, 250);
+    border-bottom: 1px solid #4c4c4c;
+}
+a{
+    display: inline-block;
+    padding: 0 16px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+
+}
+
+a:hover{
+    background-color: #dadadd;
+    color: brown;
+}
+
+.xiaohui{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.dl{
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    margin: 300px auto;
+    border: 2px solid gray;
+}
+
+
+.lg{
+    position: absolute;
+    top: 7px;
+    left: 550px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    float: left;
+}
+
+
+
+
