@@ -128,31 +128,56 @@ body{
 }
 
 .blog1,
-.blog2{
+.blog2,
+.blog3,
+.blog4{
     display: inline-block;
     position: absolute;
 }
 
-.blog1{
+.blog2{
     left: 10px;
-    top: 10px;
+    top: 290px;
     width: 600px;
     height: 350px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 0;
+    transition: all .3s linear;
+}
+
+.blog3{
+    left: 550px;
+    top: 30px;
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 0;
+    transition: all .3s linear;
+}
+
+.blog4{
+    left: 800px;
+    bottom: 80px;
+    width: 600px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
     transition: all .3s linear;
 }
 
-.blog2{
-    left: 100px;
-    top: 260px;
-    width: 600px;
-    height: 350px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
-    z-index: 0;
-    transition: all .3s linear;
+.blog3:hover{
+    box-shadow: 1px 1px 8px 5px rgb(161, 161, 161);
+    transform: translateY(-3.5px);
+    z-index: 2;
+}
+
+.blog4:hover{
+    box-shadow: 1px 1px 8px 5px rgb(161, 161, 161);
+    transform: translateY(-3.5px);
+    z-index: 2;
 }
 
 .nav{
@@ -165,10 +190,7 @@ body{
     line-height: 30px;
 }
 
-.blog1:hover{
-    box-shadow: 1px 1px 8px 5px rgb(161, 161, 161);
-    transform: translateY(-3.5px);
-}
+
 
 .blog2:hover{
     box-shadow: 1px 1px 8px 5px rgb(161, 161, 161);
@@ -213,20 +235,7 @@ body{
     position: absolute;
     left: 70px;
     top: -90px;
-    pointer-events: none;
-    animation: lihua 3s linear infinite;
 }
-
-@keyframes lihua {
-    0% {
-        background-position: 0px 0px;
-    }
-
-    100% {
-        background-position: 100px 10000px;
-    }
-}
-
 
 .aa{
     display: inline-block;
@@ -243,7 +252,6 @@ body{
 }
 
 .aa:hover{
-    /* font-size: large; */
     box-shadow: 1px 1px 8px 5px rgb(214, 214, 214);
     transform: translateY(-3px);
     text-decoration: none;
@@ -259,19 +267,6 @@ body{
     animation: shake 4s ease-in-out infinite;
 }
 
-@keyframes shake {
-    0% {
-        transform: rotate(-3deg);
-    }
-
-    50% {
-        transform: rotate(3deg);
-    }
-
-    100% {
-        transform: rotate(-3deg);
-    }
-}
 
 a.column:focus {
     text-decoration: none;
@@ -280,3 +275,10 @@ a.column:focus {
 a.aa:focus {
     text-decoration: none;
 }
+
+
+
+
+
+
+   

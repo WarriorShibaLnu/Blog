@@ -3,54 +3,169 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wu_jin_hao_website</title>
+    <title>wujinhao'blog</title>
 </head>
 <style>
-    @import url(./wujinhao.css);
+    @import url(./column_1.css);
+    @import url(./main.css);
+
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+    #blog1{
+        left: 385px;
+        top: 15px;
+        width: 500px;
+        height: 260px;
+        background-color: rgba(255, 255, 255, 0.5);
+        /*position: relative;*/
+        overflow: hidden;
+        z-index: -1;
+        transition: all .3s linear;
+        position: relative;
+    }
+
+    #blog1:hover{
+        box-shadow: 1px 1px 8px 5px rgb(161, 161, 161);
+        transform: translateY(-3.5px);
+        z-index: 3;
+    }
+    #imgList{
+        width: 3000px;
+        height: 260px;
+    }
+    #imgList img{
+        width: 500px;
+        height: 260px;
+    }
+    #imgList li{
+        float: left;
+    }
+    .pre{
+        background-color: rgba(164, 164, 164, 0.6);
+        width: 30px;
+        height: 40px;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        position: absolute;
+        left: 5px;
+        top: 45%;
+        cursor: pointer;
+    }
+    .nex{
+        background-color: rgba(164, 164, 164, 0.6);
+        width: 30px;
+        height: 40px;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        position: absolute;
+        right: 5px;
+        top: 45%;
+        cursor: pointer;
     }
 </style>
 
-<body id="bac">
-    <div class="daohang">
-        <ul>
-            <li> <a href="#" target="_blank">首页</a></li>
-            <li><a href="https://lgwindow.sdut.edu.cn/index.htm" target="_blank">新闻网</a></li>
-            <li><a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a></li>
-            <li><a href="https://jsjxy.sdut.edu.cn/" target="_blank">计算机学院</a></li>
-            <li><a href="https://etcnew.sdut.edu.cn/meol/index.do" target="_blank">优慕课</a></li>
-            <li><a href="./tfc.html" target="_blank">团风采</a></li>
-            
-        </ul>
-        <!-- <h1>吴锦皓</h1> -->
-        <img src="./校徽扣.png" alt="校徽" class="xiaohui" width="40px">
-        <img src="./未标题-1.png" alt="" class="lg" height="40px" width="320px">
-        <div class="dl">
-            <form action="">
-
-                请输入用户名:<input type="text" placeholder="请输入用户名" class="lll">
-
-                <br>
-                <br>
+<body>
 
 
-                请输入密码: <input type="password" placeholder="请输入密码" class="lll">
 
-                <br>
-                <br>
+    <div class="mybox">
 
-                <input type="submit"><input type="reset">
-            </form>
+
+        <img src="./doge.jpg" alt="" class="head">
+        <img src="./lihua.png" alt="" class="lihua">
+
+
+
+        <div class="title">
+            <p><strong>Coconuter</strong></p>
+            <div class="ray"></div>
+        </div>
+
+        <div class="introduction">
+            <p style="color: rgb(0, 128, 255);">来自于山东威海~</p>
+            <p>喜欢计算机技术和二次元&#128516;</p>
+            <p style="color: rgb(255, 34, 0);">喜欢收集各种手办和角色立牌</p>
+            <p style="color: green;">不喜欢体育但不是肥宅</p>
+            <p style="color: pink;">喜欢熬夜乐于助人!</p>
+            <p style="color: rgb(83, 83, 83);">学习:Python网络爬虫,物联网技术</p>
+            <p style="color: rgb(83, 83, 83);">人工智能算法</p>
+        </div>
+
+        <a href="https://space.bilibili.com/473304486?spm_id_from=333.1007.0.0" target="_blank"
+            class="bili">Bilibili</a>
+        <a href="#" target="_blank" class="bok">博客🎨</a>
+    </div>
+
+    <div class="blog3">
+        <!-- <div class="nav"><strong>Coconuter - account</strong></div> -->
+
+    </div>
+    
+    <div class="blog4">
+
+    </div>
+
+    <div class="father">
+        <div id="blog1">
+                <ul id="imgList">
+                     <li><img src="./Img/1.jpg"></li>
+                     <li><img src="./Img/2.jpg"></li>
+                     <li><img src="./Img/3.png"></li>
+                     <li><img src="./Img/6.jpg"></li>
+                     <li><img src="./Img/5.jpg"></li>
+                     <li><img src="./Img/1.jpg"></li>
+                </ul>
+                <div class="pre">《</div>
+                <div class="nex">》</div>
+        </div>
+        <script>
+            var epre=document.querySelector('.pre');
+            var enex=document.querySelector('.nex');
+            var left=0;
+            var timer;
+            run();
+            function run(){
+                if(left <= -2500) {
+                    left=0;
+                }
+                imgList.style.marginLeft=left+'px';
+                var n = (left % 500 ==0) ? n = 1200 : n = 10;
+                left -= 10;
+                timer = setTimeout(run,n);
+            }
+            epre.onclick = function(){
+                alert("向前");
+            }
+            enex.onclick = function(){
+                alert("向后")
+            }
+        </script>
+           
+
+        <div class="blog2">
+            <div class="nav"><strong>Coconuter - account</strong></div>
+
+            <a href="https://etcnew.sdut.edu.cn/meol/index.do" target="_blank" class="aa">在线教育平台</a>
+            <a href="https://jsjxy.sdut.edu.cn/" target="_blank" class="aa">计算机学院</a>
+            <a href="https://lgwindow.sdut.edu.cn/index.htm" target="_blank" class="aa">新闻网</a>
+            <a href="https://www.csdn.net/" target="_blank" class="aa">CSDN</a>
+            <a href="https://www.douyin.com/" target="_blank" class="aa">抖音</a>
+            <a href="https://www.pixiv.net/users/100169335" target="_blank" class="aa">Pivix</a>
+            <a href="http://211.64.28.123/" target="_blank" class="aa">教务平台</a>
+
         </div>
     </div>
 
 
-
-
+    <div class="bottom">
+        © 2023 By Coconuter🎉 · E-mail:sdutwujinhao@gmail.com
+    </div>
 </body>
 
 </html>
